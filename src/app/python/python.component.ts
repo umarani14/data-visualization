@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-python',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./python.component.css']
 })
 export class PythonComponent {
+  constructor(private router: Router) { }
 
+  backToHome() {
+      this.router.navigate(['home'])
+  }
 }

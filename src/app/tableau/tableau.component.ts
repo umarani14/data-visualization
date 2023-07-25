@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tableau',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./tableau.component.css']
 })
 export class TableauComponent {
+  constructor(private router: Router) { }
 
+  backToHome() {
+      this.router.navigate(['home'])
+  }
 }

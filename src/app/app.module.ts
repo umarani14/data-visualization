@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { TableauComponent } from './tableau/tableau.component';
 import { VizhubComponent } from './vizhub/vizhub.component';
 import { PythonComponent } from './python/python.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PythonComponent } from './python/python.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
